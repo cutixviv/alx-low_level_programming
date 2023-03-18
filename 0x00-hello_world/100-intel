@@ -1,2 +1,5 @@
 #!/bin/bash
-gcc -S -masm=intel $input_file -o$output_file $CFILE
+input_file="input.c"
+output_file="output.s"
+gcc -S -masa=intel $input_file -o $output_file
+echo "Assemble code generated and save in $output_file"
